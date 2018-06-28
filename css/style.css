@@ -1,6 +1,6 @@
 /*////////////// Fonts //////////////*/
-
 /* link the web font used for the level 1 heading here */
+@font-face { font-family: 'Baskerville-Bold'; src: url('/css/webfont/Baskerville-Bold.eot') format('embedded-opentype'); font-weight: normal; font-style: normal; } @font-face { font-family: 'Baskerville-Bold'; src: url(data:application/x-font-woff;charset=utf-8;base64,) format('woff'), url('/css/webfont/Baskerville-Bold.ttf') format('truetype'), url('/css/webfont/Baskerville-Bold.svg#Baskerville-Bold') format('svg'); font-weight: normal; font-style: normal; }
 
 /*////////// Global Styles //////////*/
 
@@ -11,10 +11,131 @@ body {
 }
 
 .wrapper {
-	width: 960px;
+	width: 1060px;
 	margin: 0 auto;
 	background: #fff;
 	padding: 0 45px 20px;
 }
 
 /* Write all remaining styles here */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header {
+    height: 103px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    border-bottom: .5px solid rgba(135,157,149,0.84);
+    margin: 0 auto;
+    margin-bottom: 0px;
+    }
+
+section {
+
+}
+/* //// LOGO "ZESTY" LINK HEADER /// */
+
+#logo a:link, #logo a:visited { 
+	font-family: "Baskerville-Bold", serif;
+    font-size: 2.5em;
+    box-align: center;
+    color: rgba(135,157,149,0.84);
+    text-decoration: none;
+    padding-top: 30px;
+}
+    
+/* font colors/border colors
+	(135,157, 149,0.84)
+	(92,108,103,0.89) 
+*/
+
+#logo a:hover {
+    color: rgba(92,108,103,0.89);
+}
+
+h2 {
+	color: rgba(92,108,103,0.89);
+	font-size: 2em;
+}
+/*/// ALL IMAGES: MAIN AND LOGOS /// */
+img {
+    border: 5px solid rgba(135,157,149,0.84);
+}
+section #necklace img { 
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding: 0px;
+    box-align: center;
+}
+
+.col-1 a img{
+	border: 5px solid rgba(193, 193, 193,.82);
+}
+
+.col-1 a img:visited {
+	border: 5px solid rgba(193, 193, 193,.82);
+}
+
+.col-1 a img:hover {
+    border:5px solid rgba(92,108,103,0.89);
+}
+
+/* //// LEARN MORE IN <P> LINK //// */
+#about p a:link, #about p a:visited {
+	color: blue;
+	text-decoration: none;
+}
+#about p a:hover {
+	color: blue;
+	text-decoration: underline;
+}
+
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+}
+
+#press {
+    margin-right:0px;
+}
+.col-1 {
+    float: left;
+    margin: 0 auto;
+    /*margin-right: 5px;*/
+    width: auto;
+}
+ .first {
+    margin-left: 0%; 
+ }
+
+ /*
+ .last {
+     margin-right:0px;
+     margin:0 auto;
+ }*/
+
+ [class*="col-"] {
+    margin-left: 5px;
+ }
+
+
+
+footer {
+    clear: both;
+	float: right;
+    font-size: 0.75em;
+	margin-top: 5px;
+	/*padding-bottom: 20px;
+    margin-bottom: 20px;*/
+}
+
